@@ -1,0 +1,40 @@
+<h1 style="text-align: center;">Payment Detail Register</h1>
+<app-post></app-post>
+<div class="column">
+<table class="table table-striped table-bordered">
+  <thead>
+      <tr>
+          <th scope="col">#</th>
+          <th scope="col">Card Owner</th>
+          <th scope="col">Card Number</th>
+          <th scope="col">Exp. Date</th>
+          <th scope="col">Action</th>
+      </tr>
+  </thead>
+  <tbody *ngFor="let user of database let i = index">
+      <tr>
+          <th scope="row" >
+              {{i+1}}
+          </th>        
+          <td>
+              {{user.cardOwnerName}}
+          </td>
+          <td>
+              {{user.cardNumber}}
+          </td>
+          <td>
+              {{user.expirationDate}}
+          </td>
+          <td>
+              <!-- <button (click)="getUserId(user.id)">Edit </button> -->
+              <button class="btn btn-info" style="margin-right:10px;"><i class="bi bi-pencil-square"(click)=getIdEdit(user.paymentDetailId)>Edit</i></button>
+              <button class="btn btn-danger" (click)=getIdDelete(user.paymentDetailId) ><i class="bi bi-trash">Delete</i></button>            
+          </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+

@@ -1,0 +1,42 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Update Data</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<form class="form-signin" [formGroup]="form.updateData" (ngSubmit)="updateUser(id)"> 
+    <div class="modal-body">
+        <div class="auth-wrapper">
+            <input type="hidden" formControlName="paymentDetailId" name="paymentDetailId" id="paymentDetailId">
+            <div class="form-group">
+                <label>Card Owner Name</label>
+                <input type="text" class="form-control" formControlName="cardOwnerName" name="cardOwnerName" id="cardOwnerName" placeholder="Full Name">
+                <span style="color: red;" *ngIf="cardOwnerName && cardOwnerName.touched && cardOwnerName.invalid">
+                    Name is required min length is 5
+                </span>
+            </div>        
+            <div class="form-group">
+                <label>Card Number</label>
+                <input type="text" class="form-control" formControlName="cardNumber" name="cardNumber" id="cardNumber" placeholder="16 Digit card number" (keypress)="isNumberKey($event)" maxlength = "16">
+                <span style="color: red;" *ngIf="cardNumber && cardNumber.touched && cardNumber.invalid">
+                    16 Digit Number Required
+                </span>
+            </div> 
+            <div class="form-group">
+                <label>Valide Through</label>
+                <input type="date" class="form-control" formControlName="expirationDate" name="expirationDate" id="expirationDate" placeholder="MM/YY">
+                <span style="color: red;" *ngIf="expirationDate && expirationDate.touched && expirationDate.invalid">
+                    Input date
+                </span>       
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" (click)="activeModal.dismiss('Submit')" style="margin-top: 1%;">Submit</button>
+        <button type="button" class="btn btn-secondary" (click)="activeModal.dismiss('Close click')">Cancel</button>
+    </div>   
+</form>
+ 
+
+
+

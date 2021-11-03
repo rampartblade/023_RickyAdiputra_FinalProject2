@@ -1,0 +1,11 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~datatables.net-bs4/css/dataTables.bootstrap4.css";
+
+/* You can add global styles to this file, and also import other style files */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
