@@ -32,7 +32,6 @@ export class DatabaseService {
   getDataById(id: number): Observable<Userdata>{
     const api = `${this.endpoint}/${id}`;
     return this.http.get<Userdata>(api).pipe(catchError(this.handleError)) 
-
   }
 
   deleteData(id: number): Observable<any>{

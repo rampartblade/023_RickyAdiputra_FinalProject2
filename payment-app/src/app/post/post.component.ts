@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { ignoreElements } from 'rxjs/operators';
 
 import { Userdata } from 'src/models/userdata';
 import { DatabaseService } from '../services/database.service';
@@ -63,10 +64,14 @@ export class PostComponent implements OnInit {
   }
 
   addUser(){
+    if(this.form.inputData.invalid)
+    return alert('data tidak boleh kosong!')
+    
     this.databaseService.addData(this.form.inputData.value).subscribe((res)=>{
       if(res){
         this.databaseService.getAll()
         this.form.inputData.reset()
+        alert('data berhasil dibuat!')
         location.reload()
       }
     })

@@ -31,6 +31,7 @@ export class DeleteComponent implements OnInit {
     this.databaseService.deleteData(event).subscribe((res: any)=>{
       if(res){ 
         this.getUser()
+        alert('data berhasil dihapus!')
         location.reload()
       }
     })

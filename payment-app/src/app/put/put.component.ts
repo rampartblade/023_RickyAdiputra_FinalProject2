@@ -64,13 +64,17 @@ export class PutComponent implements OnInit {
   }
 
   updateUser(id:number){
+    if(this.form.updateData.invalid)
+    return
     this.databaseService.updateData(id, this.form.updateData.value).subscribe((res: any)=>{
       if(res){
-        //this.form.updateData.reset()
+        this.database = res
+        this.form.updateData.reset()
         this.databaseService.getAll()
       }
     })
     //console.log(this.form.updateData.value)
+    alert('data berhasil diupdate!')
     location.reload()
   }
 }

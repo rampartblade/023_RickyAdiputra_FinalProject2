@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ricky\\Documents\\bootcamp hacktiv8\\Final Project 1\\PaymentAPI\\PaymentAPI\\PaymentAPI.csproj": {}
+    "C:\\Users\\Ricky\\Documents\\bootcamp hacktiv8\\Final Project 2\\PaymentAPI\\PaymentAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ricky\\Documents\\bootcamp hacktiv8\\Final Project 1\\PaymentAPI\\PaymentAPI\\PaymentAPI.csproj": {
+    "C:\\Users\\Ricky\\Documents\\bootcamp hacktiv8\\Final Project 2\\PaymentAPI\\PaymentAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ricky\\Documents\\bootcamp hacktiv8\\Final Project 1\\PaymentAPI\\PaymentAPI\\PaymentAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Ricky\\Documents\\bootcamp hacktiv8\\Final Project 2\\PaymentAPI\\PaymentAPI.csproj",
         "projectName": "PaymentAPI",
-        "projectPath": "C:\\Users\\Ricky\\Documents\\bootcamp hacktiv8\\Final Project 1\\PaymentAPI\\PaymentAPI\\PaymentAPI.csproj",
+        "projectPath": "C:\\Users\\Ricky\\Documents\\bootcamp hacktiv8\\Final Project 2\\PaymentAPI\\PaymentAPI.csproj",
         "packagesPath": "C:\\Users\\Ricky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ricky\\Documents\\bootcamp hacktiv8\\Final Project 1\\PaymentAPI\\PaymentAPI\\obj\\",
+        "outputPath": "C:\\Users\\Ricky\\Documents\\bootcamp hacktiv8\\Final Project 2\\PaymentAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

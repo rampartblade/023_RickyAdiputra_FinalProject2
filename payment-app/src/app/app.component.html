@@ -23,7 +23,7 @@
               {{user.cardNumber}}
           </td>
           <td>
-              {{user.expirationDate}}
+              {{user.expirationDate|date: 'MMM YYYY'}}
           </td>
           <td>
               <!-- <button (click)="getUserId(user.id)">Edit </button> -->
